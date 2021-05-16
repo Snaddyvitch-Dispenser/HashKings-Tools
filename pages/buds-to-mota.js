@@ -146,6 +146,7 @@ export default class LevelUp extends React.Component {
                                     <Typography style={{margin: "0"}}>{this.state.orders.length === 500 ? "Couldn't load all burns for today. Data May be incorrect." : ""}</Typography>
                                     <Typography style={{margin: "5px 0 10px 0"}}>Pool Resets at UTC 00:00:00. Current Time UTC: {this.timeToString(this.state.date)}</Typography>
                                     <p style={{color: "darkred"}}>This tool isn't guaranteed to be accurate as more people can add to the pool and reduce the amount you'll recieve. I am not liable for any incorrect figures produced by this app!</p>
+                                    <p style={{color: "black"}}>Please consider <a href={"https://vote.hive.uno"} style={{color: "#1993fb"}}>voting my witness</a> if this free tool has helped you.</p>
                                 </Paper>
                             </Grid>
                         </Grid>
