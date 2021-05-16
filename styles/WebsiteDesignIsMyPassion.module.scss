@@ -1,0 +1,93 @@
+.outer {
+  font-size: 80px;
+  font-family: "Comic Sans MS", cursive;
+  background-image: url("/passion.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: -20px;
+  width: calc(100% + 40px);
+  overflow: hidden;
+}
+
+.bluePassport {
+  background: linear-gradient(90deg, rgba(0,120,215,1) 0%, rgba(0,120,215,1) 100%);
+}
+
+.first {
+  color: red;
+}
+
+.second {
+  margin-left: 8rem;
+  color: lime;
+  display: inline-block;
+}
+
+.third {
+  color: blue;
+  margin-left: 25%;
+}
+
+.fourth {
+  color: salmon;
+}
+
+.fifth {
+  color: brown;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(359deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes christmas {
+  0% {
+    color: brown;
+  }
+
+  50% {
+    color: orange;
+  }
+
+  100% {
+    color: brown;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .first {
+    animation: pulse 1s infinite;
+  }
+
+  .second, .third {
+    animation: rotate 5s infinite;
+  }
+
+  .fifth .bluePassport {
+    animation: christmas 5s infinite;
+  }
+}
