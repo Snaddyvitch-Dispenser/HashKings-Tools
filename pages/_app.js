@@ -7,6 +7,8 @@ function MyApp({ Component, pageProps }) {
     <CssBaseline />
     <Header />
     <Component {...pageProps} />
+    <script async defer src="https://xn--037hagxok3bf8b.dbuidl.com/latest.js" data-collect-dnt="true"/>
+    <noscript><img src="https://xn--037hagxok3bf8b.dbuidl.com/noscript.gif?collect-dnt=true" alt="" referrerPolicy="no-referrer-when-downgrade"/></noscript>
   </>
 }
 
